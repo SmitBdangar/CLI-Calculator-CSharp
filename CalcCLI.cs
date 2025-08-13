@@ -1,77 +1,37 @@
 using System;
+using static System.Console;
 
-internal class Program
+class Program
 {
-    private static void Main(string[] args)
+    static void Main()
     {
-        Program p = new Program();
-        p.RunCalculator();
-    }
+        WriteLine("Enter frist Number :");
+        int num1 = Convert.ToInt32(Console.ReadLine());
 
-    public void RunCalculator()
-    {
-        while (true)
+        WriteLine("Enter Second Number :");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+
+        WriteLine("Chose an operation: (+ ,- ,* ,/)");
+        string operation = Console.ReadLine();
+
+        int result = 0;
+
+        if (operation == "+") { result = num1 + num2; }
+        else if (operation == "-") { result = num1 - num2; }
+        else if (operation == "*") { result = num1 * num2; }
+        else if (operation == "/")
         {
-            Console.WriteLine("\n--- Complex Calculator ---");
-            Console.Write("Enter first number: ");
-            if (!double.TryParse(Console.ReadLine(), out double a))
+            if (num2 != 0)
             {
-                Console.WriteLine("Invalid input for first number.");
-                continue;
+                result = num1 / num2;
             }
-
-            Console.Write("Enter operator (+, -, *, /): ");
-            string op = Console.ReadLine();
-
-            Console.Write("Enter second number: ");
-            if (!double.TryParse(Console.ReadLine(), out double b))
+            else
             {
-                Console.WriteLine("Invalid input for second number.");
-                continue;
-            }
-
-            double result = 0;
-            bool validOp = true;
-            switch (op)
-            {
-                case "+":
-                    result = a + b;
-                    break;
-                case "-":
-                    result = a - b;
-                    break;
-                case "*":
-                    result = a * b;
-                    break;
-                case "/":
-                    if (b == 0)
-                    {
-                        Console.WriteLine("Error: Division by zero.");
-                        validOp = false;
-                    }
-                    else
-                    {
-                        result = a / b;
-                    }
-                    break;
-                default:
-                    Console.WriteLine($"Unknown operator: {op}");
-                    validOp = false;
-                    break;
-            }
-
-            if (validOp)
-            {
-                Console.WriteLine($"Result: {a} {op} {b} = {result}");
-            }
-
-            Console.Write("Do you want to perform another calculation? (y/n): ");
-            string cont = Console.ReadLine();
-            if (!string.IsNullOrEmpty(cont) && cont.Trim().ToLower() != "y")
-            {
-                Console.WriteLine("Exiting calculator. Goodbye!");
-                break;
+                WriteLine("Error");
+                return;
             }
         }
+         Console.WriteLine($"Result: {result}");
+    
     }
 }
