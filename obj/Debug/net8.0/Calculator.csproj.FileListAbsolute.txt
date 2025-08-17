@@ -1,0 +1,15 @@
+/workspaces/CLI-Calculator-CSharp/bin/Debug/net8.0/Calculator
+/workspaces/CLI-Calculator-CSharp/bin/Debug/net8.0/Calculator.deps.json
+/workspaces/CLI-Calculator-CSharp/bin/Debug/net8.0/Calculator.runtimeconfig.json
+/workspaces/CLI-Calculator-CSharp/bin/Debug/net8.0/Calculator.dll
+/workspaces/CLI-Calculator-CSharp/bin/Debug/net8.0/Calculator.pdb
+/workspaces/CLI-Calculator-CSharp/obj/Debug/net8.0/Calculator.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CLI-Calculator-CSharp/obj/Debug/net8.0/Calculator.AssemblyInfoInputs.cache
+/workspaces/CLI-Calculator-CSharp/obj/Debug/net8.0/Calculator.AssemblyInfo.cs
+/workspaces/CLI-Calculator-CSharp/obj/Debug/net8.0/Calculator.csproj.CoreCompileInputs.cache
+/workspaces/CLI-Calculator-CSharp/obj/Debug/net8.0/Calculator.sourcelink.json
+/workspaces/CLI-Calculator-CSharp/obj/Debug/net8.0/Calculator.dll
+/workspaces/CLI-Calculator-CSharp/obj/Debug/net8.0/refint/Calculator.dll
+/workspaces/CLI-Calculator-CSharp/obj/Debug/net8.0/Calculator.pdb
+/workspaces/CLI-Calculator-CSharp/obj/Debug/net8.0/Calculator.genruntimeconfig.cache
+/workspaces/CLI-Calculator-CSharp/obj/Debug/net8.0/ref/Calculator.dll

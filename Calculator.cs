@@ -5,13 +5,13 @@ class Program
 {
     static void Main()
     {
-        WriteLine("Enter frist Number :");
+        Write("Enter frist Number :");
         int num1 = Convert.ToInt32(Console.ReadLine());
 
-        WriteLine("Enter Second Number :");
+        Write("Enter Second Number :");
         int num2 = Convert.ToInt32(Console.ReadLine());
 
-        WriteLine("Chose an operation: (+ ,- ,* ,/)");
+        WriteLine("Chose an operation: (+ ,- ,* ,/):");
         string operation = Console.ReadLine();
 
         int result = 0;
