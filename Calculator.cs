@@ -17,6 +17,7 @@ class Program
         int result = 0;
 
         if (operation == "+") { result = num1 + num2; }
+       
         else if (operation == "-") { result = num1 - num2; }
         else if (operation == "*") { result = num1 * num2; }
         else if (operation == "/")
@@ -35,3 +36,4 @@ class Program
     
     }
 }
+
