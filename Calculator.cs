@@ -38,3 +38,60 @@ class Program
 }
 
 
+--------------------------------------------------------------------------------------------------------------
+
+    [First Version]
+
+
+using System;
+using System.Security.Claims;
+
+class Program1
+{
+    static void Main()
+
+            {
+        Console.WriteLine("Enter Your First Valu :");
+        int Num1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Enter Your First Valu :");
+        int Num2 = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Enter Your Method(+,-,*,/):");
+        String Opration = Console.ReadLine();
+
+        int Total = 0;
+
+        if (Opration == "+")
+        {
+            Console.WriteLine(Total = Num1 + Num2);
+            return;
+        }
+
+        else if (Opration == "-")
+        {
+            Console.WriteLine(Total = Num1 - Num2);
+            return;
+        }
+
+        else if (Opration == "*")
+        {
+            Console.WriteLine(Total = Num1 * Num2);
+            return;
+        }
+
+        else if (Opration == "/" && Num2 != 0)
+        {
+            Console.WriteLine(Total = Num1 / Num2);
+            return;
+        }
+
+        else
+        {
+            Console.WriteLine("Invalid Operation");
+            return;
+        }
+    }
+}
+
+
